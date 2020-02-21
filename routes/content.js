@@ -40,6 +40,7 @@ router.get("/content/:page/:category", function(req, res, next) {
 });
 
 router.get("/offering", function(req, res, next) {
+    logger(`Header: ${JSON.stringify(req.headers)}`)
     contentservice.getOfferings()
     .then(data=>{
         logger(`get ${data.length} offering data`)
