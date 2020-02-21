@@ -15,6 +15,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/api', contentRouter);
 
+app.use('/api', contentRouter);
+app.disable('etag')
 module.exports = app;
