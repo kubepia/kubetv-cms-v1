@@ -48,7 +48,7 @@ spec:
     spec:
       containers:
         - name: cms-v1
-          image: g3.skb:8500/btv/cms-v1:latest
+          image: g3.skb:8500/btv-backing/cms-v1:latest
           imagePullPolicy: Always
           volumeMounts:
           - name: app-config
