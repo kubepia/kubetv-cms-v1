@@ -5,13 +5,13 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.status(200)
       .type("html")
-      .send("api");
+      .send("cms-v1");
 });
 
 router.get("/health", function(req, res, next) {
   res.status(200)
       .type("html")
-      .send("api");
+      .send("cms-v1");
 });
 
 module.exports = router;
