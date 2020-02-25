@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: cms
+  namespace: btv-backing
   labels:
     app: cms
     service: cms
@@ -17,6 +18,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: cms
+  namespace: btv-backing
   labels:
     app: endpoint
 data:
@@ -32,6 +34,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: cms-v1
+  namespace: btv-backing
   labels:
     app: cms
     version: v1
