@@ -40,6 +40,9 @@ class ContentService {
                     }
                 },
                 (err, docs) => {
+                    docs.forEach(e=>{
+                        e.membership = 0
+                    })
                     resolve(docs);
                 }
             );
@@ -59,6 +62,9 @@ class ContentService {
                     }
                 },
                 (err, docs) => {
+                    docs.forEach(e=>{
+                        e.membership = 0
+                    })
                     resolve(docs);
                 }
             );
@@ -86,6 +92,9 @@ class ContentService {
                     }
                 },
                 (err, docs) => {
+                    docs.forEach(e=>{
+                        e.membership = 0
+                    })
                     resolve(docs);
                 }
             );
@@ -106,9 +115,9 @@ class ContentService {
                     }
                 },
                 (err, docs) => {
-                    // docs.forEach(e=>{
-                    //     e.membership = false
-                    // })
+                    docs.forEach(e=>{
+                        e.membership = 0
+                    })
                     resolve(docs);
                 }
             );
