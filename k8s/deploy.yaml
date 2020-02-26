@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: cms
+  name: cms-svc
   namespace: btv-backing
   labels:
-    app: cms
-    service: cms
+    app: cms-svc
+    service: cms-svc
 spec:
   selector:
     app: cms
