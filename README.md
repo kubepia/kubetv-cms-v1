@@ -3,7 +3,7 @@
 # command
 
 ``` shell
-mongoimport -d berries -c movies --file m.json --type json --jsonArray
+mongoimport -d kubetv -c movies --file m.json --type json --jsonArray
 ```
 
 category
